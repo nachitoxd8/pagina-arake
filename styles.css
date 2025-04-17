@@ -24,12 +24,72 @@
     top: 0;
     z-index: 1000;
   }
-  #main-header {
-    transition: top 0.3s ease-in-out;
+ /* Estilo base del header */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  background-color: #004b8d;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#main-header .menu-toggle {
+  display: none; /* Oculta el botón de menú en resoluciones grandes */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#main-header .nav-menu {
+  display: flex;
+  gap: 1em;
+}
+
+#main-header .nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+#main-header .nav-menu a:hover {
+  color: #3aad35;
+}
+
+/* Estilos para resoluciones pequeñas */
+@media (max-width: 768px) {
+  #main-header .menu-toggle {
+      display: block; /* Muestra el botón de menú */
   }
-  header img {
-    height: 32px; /* Aumenta el tamaño del logo */
+
+  #main-header .nav-menu {
+      display: none; /* Oculta el menú por defecto */
+      flex-direction: column;
+      gap: 0;
+      background-color: #004b8d;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1em 0;
   }
+
+  #main-header .nav-menu a {
+      padding: 0.5em 1em;
+      text-align: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  #main-header .nav-menu.active {
+      display: flex; /* Muestra el menú cuando está activo */
+  }
+}
   nav {
     display: flex;
     justify-content: center; /* Centra los enlaces horizontalmente */

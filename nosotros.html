@@ -5,18 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nosotros - ARAKE Tecno Consultora</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="static/css/styles.css" />
 </head>
 <body>
-  <header id="main-header">
-    <a href="/"><img src="logo.jpg" alt="Logo ARAKE"></a>
-    <nav>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="servicios.html">Servicios</a>
-      <a href="index.html#clientes">Clientes</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-  </header>
+    <header id="main-header">
+        <a href=""><img src="/static/images/logo.jpg" alt="Logo ARAKE"></a>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="#clientes">Clientes</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
 
   <div class="hero">
     <h1>Nosotros</h1>
@@ -43,7 +46,7 @@
         <p>Brindar asesoramiento y soluciones tecnológicas personalizadas que impulsen el crecimiento y la eficiencia de nuestros clientes.</p>
       </div>
       <div class="card">
-        <img src="visibilidad.png" alt="Visión">
+        <img src="static/images/visibilidad.png" alt="Visión">
         <h3>Visión</h3>
         <p>Ser referentes en innovación tecnológica en Latinoamérica, construyendo relaciones sólidas y confiables con nuestros clientes.</p>
       </div>
@@ -84,6 +87,6 @@
     <p>&copy; 2025 ARAKE Tecno Consultora | Todos los derechos reservados</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="static/js/script.js"></script>
 </body>
 </html>

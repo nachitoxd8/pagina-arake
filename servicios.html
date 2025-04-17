@@ -6,16 +6,19 @@
     <title>Servicios - ARAKE Tecno Consultora</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
     <header id="main-header">
-        <a href=""><img src="logo.jpg" alt="Logo ARAKE"></a>
-        <nav>
-          <a href="nosotros.html">Nosotros</a>
-          <a href="servicios.html">Servicios</a>
-          <a href="#clientes">Clientes</a>
-          <a href="contacto.html">Contacto</a>
+        <a href=""><img src="/static/images/logo.jpg" alt="Logo ARAKE"></a>
+        <button class="menu-toggle" aria-label="Abrir menú">
+            <i class="fa fa-bars"></i>
+        </button>
+        <nav class="nav-menu">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="#clientes">Clientes</a>
+            <a href="contacto.html">Contacto</a>
         </nav>
     </header>
 
@@ -53,6 +56,6 @@
         <p>&copy; 2025 ARAKE Tecno Consultora | Todos los derechos reservados</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>

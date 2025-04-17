@@ -26,3 +26,9 @@ window.addEventListener('scroll', () => {
 
   lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Evita valores negativos
 });
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+menuToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('active'); // Activa o desactiva el menú desplegable
+});
