@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - ARAKE Tecno Consultora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <header id="main-header">
+        <a href=""><img src="/static/images/logo.jpg" alt="Logo ARAKE"></a>
+        <nav>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="#clientes">Clientes</a>
+          <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>Contacto</h1>
+    </div>
+
+    <section class="section" id="contacto">
+        <h2>Contacto</h2>
+        <div class="contact-info" style="text-align: center; margin: 2em auto;">
+            <p style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.2em;">
+                <img src="https://img.icons8.com/ios-filled/50/3aad35/email.png" alt="Correo" style="width: 24px; height: 24px;">
+                <strong>Correo:</strong> <a href="mailto:contacto@arake.com" style="color: #3aad35;">contacto@arake.com</a>
+            </p>
+            <p style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.2em;">
+                <img src="https://img.icons8.com/ios-filled/50/3aad35/phone.png" alt="Teléfono" style="width: 24px; height: 24px;">
+                <strong>Teléfono:</strong> <a href="tel:+3765525187" style="color: #3aad35;">+376 552 5187</a>
+            </p>
+            <p style="display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 1.2em;">
+                <img src="https://img.icons8.com/ios-filled/50/3aad35/whatsapp.png" alt="WhatsApp" style="width: 24px; height: 24px;">
+                <a href="https://wa.me/3765525187?text=Hola" target="_blank" style="color: #3aad35;">WhatsApp</a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 ARAKE Tecno Consultora | Todos los derechos reservados</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
